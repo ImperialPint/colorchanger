@@ -1,0 +1,13 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  /*color: white;*/
+  /*background-color: black;*/
+}
+
+.button {
+  border: 5px solid #B2479A;
+  border-left: 5px solid #CC7FB5;
+  border-right: 5px solid #CC7FB5;
+  background-color: #E5B6D5;
+
+}
