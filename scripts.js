@@ -4,16 +4,25 @@ var resetButton = $('.resetButton');
 
 
 function rando() {
-  return Math.floor(Math.random() * 254) + 1;
+  return Math.floor(Math.random() * 255) + 1;
+}
+
+function changeBackground(color) {
+  return $('body').css("background-color", color);
 }
 
 function generateRandomColor(){
-  console.log(rando());
-  console.log(rando());
-  console.log(rando());
-  $('body').css("background-color", 'rgb('+ rando() +','+ rando() +','+ rando() +')');
+  var color = 'rgb('+ rando() +','+ rando() +','+ rando() +')';
+  if (color === 'rgb(255, 255, 255)') {
+    return generateRandomColor();
+  }
+  return color;
 }
 
 randomButton.on('click', function(){
-  generateRandomColor();
+  changeBackground(generateRandomColor());
+});
+
+resetButton.on('click', function(){
+  changeBackground('white');
 });
