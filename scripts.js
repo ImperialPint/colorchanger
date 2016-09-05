@@ -4,7 +4,7 @@ var resetButton = $('.resetButton');
 
 
 function rando() {
-  return Math.floor(Math.random() * 254) + 1;
+  return Math.floor(Math.random() * 255) + 1;
 }
 
 function changeBackground(color) {
@@ -13,6 +13,9 @@ function changeBackground(color) {
 
 function generateRandomColor(){
   var color = 'rgb('+ rando() +','+ rando() +','+ rando() +')';
+  if (color === 'rgb(255, 255, 255)') {
+    return generateRandomColor();
+  }
   return color;
 }
 
