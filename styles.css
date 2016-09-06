@@ -11,7 +11,9 @@ body {
 .container {
   display: flex;
   width: 450px;
+  justify-content: center;
   justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -41,7 +43,10 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-    .resetButton {
+  .container {
+    flex-direction: column;
+  }
+  .resetButton {
       height: 40px;
       font-size: 14px;
       margin-top: 10px;
