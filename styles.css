@@ -11,6 +11,7 @@ body {
 .container {
   display: flex;
   width: 450px;
+  justify-content: center;
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -21,6 +22,7 @@ body {
   font-weight: 500;
   display: flex;
   justify-content: center;
+  align-items: center;
   font-size: 25px;
   color: #FFFFFF;
   border: 8px solid #B2479A;
@@ -42,14 +44,14 @@ body {
 
 @media screen and (max-width: 550px) {
   body {
-    display: flex;
-    justify-content: center;
+    margin: auto;
   }
   .container {
+    width: 100vh;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
-    /*align-items: center;*/
+    justify-content: center;
+    align-items: center;
     /*display: block;
     margin-left: auto;
     margin-right: auto;*/
