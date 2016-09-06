@@ -44,13 +44,15 @@ body {
 
 @media screen and (max-width: 550px) {
   .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    display: block;
+    margin: auto;
   }
   .resetButton {
-    display: flex;
+    /*display: flex;*/
     text-align: center;
     height: 40px;
     font-size: 14px;
