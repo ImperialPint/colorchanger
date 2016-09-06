@@ -11,7 +11,7 @@ body {
 .container {
   display: flex;
   width: 450px;
-  justify-content: center;
+  /*justify-content: center;*/
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
@@ -43,27 +43,8 @@ body {
 }
 
 @media screen and (max-width: 550px) {
-  body {
-    display: block;
-    margin: auto;
-  }
   .container {
-    display: block;
-    margin-top: 40vh;
-    margin-left: auto;
-    margin-right: auto;
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-
-    /*margin-left: auto;
-    margin-right: auto;*/
-  }
-
-  .button {
-    /*width: auto;*/
-    margin: auto;
+    flex-direction: column;
   }
   .resetButton {
     /*display: flex;*/
