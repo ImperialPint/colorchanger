@@ -43,6 +43,7 @@ body {
 }
 
 @media screen and (max-width: 550px) {
+
   .container {
     /*display: flex;*/
     /*flex-direction: column;*/
@@ -53,7 +54,7 @@ body {
   }
   .resetButton {
     /*display: flex;*/
-    text-align: center;
+    /*text-align: center;*/
     height: 40px;
     font-size: 14px;
     margin-top: 10px;
