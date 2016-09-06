@@ -39,3 +39,11 @@ body {
   border-right: 8px solid #E5B6D5;
   background-color: #B2479A;
 }
+
+@media screen and (max-width: 350px) {
+    .resetButton {
+      height: 40px;
+      font-size: 14px;
+      margin-top: 10px;
+    }
+}
